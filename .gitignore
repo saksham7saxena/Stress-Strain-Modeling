@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Output
+output/data/
+# Keep plots for demonstration if desired, but usually we ignore generated content
+# output/plots/
+# For now, let's ignore all output to keep repo clean, or maybe allow plots?
+# Let's ignore all output
+output/
