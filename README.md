@@ -23,7 +23,7 @@ The Halpin-Tsai equations provide a more rigorous estimation of effective stiffn
 $$ E_{eff} = E_m \left( \frac{1 + \xi \eta V_f}{1 - \eta V_f} \right) $$
 
 Where:
-$$ \eta = \frac{(E_f / E_m) - 1}{(E_f / E_m) + \xi} $$
+$$ \eta = \frac{ \frac{E_f}{E_m} - 1 }{ \frac{E_f}{E_m} + \xi } $$
 
 > **Model Comparison**:
 > *   **OW-ROM**: Best for quick, empirical approximations when specific constituent data ($E_m, \nu$) is unavailable.
