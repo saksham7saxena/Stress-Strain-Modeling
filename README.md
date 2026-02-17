@@ -23,7 +23,7 @@ The Halpin-Tsai equations provide a more rigorous estimation of effective stiffn
 $$ E_{eff} = E_m \left( \frac{1 + \xi \eta V_f}{1 - \eta V_f} \right) $$
 
 Where:
-$$ \eta = \frac{E_f/E_m - 1}{E_f/E_m + \xi} $$
+$$ \eta = \frac{(E_f / E_m) - 1}{(E_f / E_m) + \xi} $$
 
 > **Model Comparison**:
 > *   **OW-ROM**: Best for quick, empirical approximations when specific constituent data ($E_m, \nu$) is unavailable.
@@ -41,7 +41,7 @@ Where $X, Y, S$ are the longitudinal, transverse, and shear strengths, respectiv
 ## Numerical Analysis & Uncertainty
 
 ### Monte Carlo Simulation
-To account for manufacturing variability, the tool performs Monte Carlo simulations by perturbing the fiber orientation weights ($\phi_i$) with Gaussian noise ($N(0, \sigma)$).
+To account for manufacturing variability, the tool performs Monte Carlo simulations by perturbing the fiber orientation weights ($\phi_i$) with multiplicative Gaussian noise (Mean $\mu=0$, Std Dev $\sigma$).
 
 *   **Purpose**: Quantify the impact of inconsistent fiber distribution on effective stiffness.
 *   **Outputs**: Generates a 95% Confidence Interval (CI) around the mean stress-strain curve.
